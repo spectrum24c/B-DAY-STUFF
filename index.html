@@ -10,7 +10,11 @@
       margin: 0;
       padding: 20px;
       color: #333;
-      text-align: center;
+      text-align: center;  
+    }
+
+    ::-webkit-scrollbar{
+        display: none;
     }
 
     .glitter-name {
@@ -32,13 +36,15 @@
     }
 
     .card {
-      background: #fff;
-      max-width: 500px;
+      background-color: #fff;
+      min-width: 500px;
       margin: 20px auto;
       padding: 25px;
       border-radius: 15px;
       box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
+
+   
 
     .card h2 {
       color: #ff4d88;
@@ -50,10 +56,11 @@
     }
 
     .photo-gallery {
+      margin-left: 450px;  
       margin-top: 30px;
-      display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      align-items: center;
       gap: 10px;
       width: 250px;height: 250px;  
       border-radius: 50%; 
@@ -61,12 +68,12 @@
       border: 4px solid #ff69b4;
     }
 
-    .photo-gallery img{
-      width: 250px;  
+    .photo-gallery img{  
+      width: 250px; 
+      height: 250px; 
       z-index: -100;
-      border-radius: 90rem;
+      border-radius: 190rem;
       position: relative;
-      top: -100px;
       bottom: 0;
     }
 
@@ -77,6 +84,27 @@
         opacity: 1;
       }
     }
+
+    @media only screen and (min-width: 150px) {
+     .card{
+        height: 350px;
+        width: 790px;
+     } 
+
+     body{
+        margin-top: 650px;
+        background: #ee9ca7;
+     }
+
+     .message{
+        font-size: 1.9em;
+     }
+
+     .photo-gallery{
+        margin-left: 350px;
+     }
+    }
+
   </style>
 </head>
 <body>
@@ -94,7 +122,7 @@
   </div>
 
   <div class="photo-gallery">
-    <img  src="tahirah-main.jp" alt="Tahirah Birthday">
+    <img  src="tahirah-main-removebg-preview.png" alt="Tahirah Birthday">
    
   </div>
 
